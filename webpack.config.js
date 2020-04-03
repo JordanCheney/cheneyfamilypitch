@@ -57,6 +57,7 @@ module.exports = {
 						options: {
 							css: false,
 							generate: 'ssr',
+							preprocess: require('svelte-preprocess')({ postcss: true }),
 							dev
 						}
 					}
